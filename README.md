@@ -86,6 +86,7 @@ The Admission Chatbot is designed to assist prospective students with questions 
 - NumPy
 - Scikit-learn
 - Jupyter Notebook
+- HuggingFace Transformer
 
 ### Usage
 

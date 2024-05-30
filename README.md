@@ -37,6 +37,11 @@ The Simple Chatbot is a basic chatbot implementation that can answer predefined 
 - Streamlit
 - NLTK
 
+### ScreenShots
+
+<img width="1710" alt="Screenshot 2024-05-30 at 20 28 41" src="https://github.com/ankitk75/AIML-Project-Series/assets/116819905/71ca14b2-dd6d-4778-8d3d-a6db501e21e6">
+
+
 ### Usage
 
 1. Clone the repository:

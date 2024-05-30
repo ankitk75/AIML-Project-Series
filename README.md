@@ -16,7 +16,7 @@ Welcome to the AIML Project Series repository. This repository contains various 
   - [Requirements](#requirements-1)
   - [Usage](#usage-1)
 - [Installation](#installation)
-- [Contributing](#contributing)
+
 
 ## Project 1: Simple Chatbot
 

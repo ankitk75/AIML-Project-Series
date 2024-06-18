@@ -54,3 +54,26 @@ The target variable is:
 To run this project, you need to have Python installed along with the necessary libraries. You can install the required libraries using the following command:
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
+```
+
+## Features
+
+- Data preprocessing and normalization
+- Feature selection using Recursive Feature Elimination (RFE)
+- Model training with various classifiers (Logistic Regression, Decision Tree, Random Forest, SVM)
+- Model evaluation using accuracy, precision, recall, and F1 score
+- Cross-validation and hyperparameter tuning for Random Forest
+- Correlation heatmap for feature visualization
+
+## Results
+The selected features using RFE are printed in the console. The performance metrics for each model (Logistic Regression, Decision Tree, Random Forest, SVM) are displayed in a tabular format.
+
+## Cross-Validation and Hyperparameter Tuning
+GridSearchCV is used to perform cross-validation and hyperparameter tuning for the Random Forest model. The best parameters are printed in the console.
+
+## Validation and Testing
+The best model (Random Forest with tuned hyperparameters) is validated on the test set. The accuracy, precision, recall, and F1 score are printed in the console.
+
+## Correlation Heatmap
+A correlation heatmap of the features and the target variable is displayed to visualize the relationships between variables.
+

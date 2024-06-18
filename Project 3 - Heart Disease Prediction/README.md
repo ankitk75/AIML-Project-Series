@@ -1,15 +1,16 @@
-# Disease Prediction System using Machine Learning
+# Heart Disease Prediction System using Machine Learning
 
-This project aims to develop an intelligent system that predicts the likelihood of a person having a particular disease based on various health-related features. The system utilizes machine learning algorithms to analyze historical health data and make predictions, contributing to early disease detection and proactive healthcare management.
+This project aims to develop an intelligent system that predicts the likelihood of a person having a heart disease based on various health-related features. The system utilizes machine learning algorithms to analyze historical health data and make predictions, contributing to early disease detection and proactive healthcare management.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Models and Evaluation](#models-and-evaluation)
+- [Procedure](#Procedure)
 - [Results](#results)
+- [Cross-Validation and Hyperparameter Tuning](Cross-Validation-and-Hyperparameter-Tuning)
+- [Validation and Testing](Validation-and-Testing)
 - [Visualization](#visualization)
 
 ## Project Overview
@@ -50,13 +51,24 @@ The dataset includes the following features:
 The target variable is:
 - HeartDiseaseorAttack
 
-## Installation
-To run this project, you need to have Python installed along with the necessary libraries. You can install the required libraries using the following command:
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn
-```
 
-## Features
+## Models and Evaluation
+
+The following machine learning models are implemented and evaluated in this project:
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+
+The models are evaluated using the following metrics:
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+
+## Procedure
 
 - Data preprocessing and normalization
 - Feature selection using Recursive Feature Elimination (RFE)

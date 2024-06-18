@@ -129,91 +129,93 @@ To install the required dependencies for both projects, you can use the `require
 pip install -r requirements.txt
 ```
 
-## Project 3: Heart Disease Prediction
+## Project 3: Heart Disease Prediction System using Machine Learning
 
-Disease Prediction System using Machine Learning
+This project aims to develop an intelligent system that predicts the likelihood of a person having a heart disease based on various health-related features. The system utilizes machine learning algorithms to analyze historical health data and make predictions, contributing to early disease detection and proactive healthcare management.
 
-This repository contains the implementation of a Disease Prediction System using machine learning algorithms. The system predicts the likelihood of a person having heart disease based on various health-related features. The project utilizes multiple machine learning models to analyze historical health data and make predictions, contributing to early disease detection and proactive healthcare management.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Features](#features)
+- [Models and Evaluation](#models-and-evaluation)
+- [Procedure](#Procedure)
+- [Results](#results)
+- [Cross-Validation and Hyperparameter Tuning](Cross-Validation-and-Hyperparameter-Tuning)
+- [Validation and Testing](Validation-and-Testing)
+- [Visualization](#visualization)
 
-Table of Contents
+## Project Overview
+The main objectives of this project are:
+1. Data Collection: Gather a diverse dataset containing relevant health features.
+2. Data Preprocessing: Perform data cleaning, handle missing values, and ensure data quality.
+3. Feature Selection: Identify the most influential variables for disease prediction.
+4. Model Development: Implement various machine learning algorithms for disease prediction.
+5. Cross-Validation: Assess the generalization performance of the models.
+6. Hyperparameter Tuning: Optimize the performance of selected machine learning models.
+7. Validation and Testing: Ensure the accuracy, reliability, and robustness of the disease prediction system.
 
-Project Description
-Dataset
-Features
-Installation
-Usage
-Results
-Visualization
-Contributing
-License
-Acknowledgements
-Project Description
+## Dataset
+The dataset used in this project is the "Heart Disease Health Indicators Dataset" from Kaggle, which can be found [here](https://www.kaggle.com/datasets/alexteboul/heart-disease-health-indicators-dataset).
 
-The "Disease Prediction System using Machine Learning" project aims to develop an intelligent system that predicts the likelihood of heart disease based on various health-related features. The system utilizes machine learning algorithms to analyze historical health data, thereby contributing to early disease detection and proactive healthcare management.
-
-Dataset
-
-The dataset used in this project is the Heart Disease Health Indicators Dataset from Kaggle. It contains various health-related features of individuals, including blood pressure, cholesterol levels, BMI, and smoking status, among others.
-
-Features
-
+## Features
 The dataset includes the following features:
+- HighBP
+- HighChol
+- CholCheck
+- BMI
+- Smoker
+- Stroke
+- Diabetes
+- PhysActivity
+- Fruits
+- Veggies
+- HvyAlcoholConsump
+- AnyHealthcare
+- NoDocbcCost
+- GenHlth
+- MentHlth
+- PhysHlth
+- DiffWalk
+- Sex
+- Age
 
-HighBP
-HighChol
-CholCheck
-BMI
-Smoker
-Stroke
-Diabetes
-PhysActivity
-Fruits
-Veggies
-HvyAlcoholConsump
-AnyHealthcare
-NoDocbcCost
-GenHlth
-MentHlth
-PhysHlth
-DiffWalk
-Sex
-Age
-The target variable is HeartDiseaseorAttack, which indicates whether the individual has heart disease or has experienced a heart attack.
-
-Installation
-
-To run this project, you need to have Python installed along with the necessary libraries. You can install the required libraries using the following command:
-
-bash
-Copy code
-pip install pandas numpy scikit-learn matplotlib seaborn
-Usage
-
-Clone this repository:
-bash
-Copy code
-git clone https://github.com/your-username/disease-prediction-system.git
-Navigate to the project directory:
-bash
-Copy code
-cd disease-prediction-system
-Run the Jupyter Notebook or Python script to train the models and make predictions.
-Results
-
-The system evaluates multiple machine learning models, including Logistic Regression, Decision Tree, Random Forest, and SVM. The performance of each model is measured using accuracy, precision, recall, and F1-score.
-
-Model Performance
-After training and evaluating the models, the results are displayed as follows:
-
-Model	Accuracy	Precision	Recall	F1 Score
-Logistic Regression	0.86	0.70	0.58	0.63
-Decision Tree	0.85	0.65	0.64	0.64
-Random Forest	0.88	0.72	0.60	0.66
-SVM	0.87	0.68	0.59	0.63
-Visualization
-
-The project includes a correlation heatmap to visualize the relationship between the features and the target variable.
+The target variable is:
+- HeartDiseaseorAttack
 
 
+## Models and Evaluation
 
+The following machine learning models are implemented and evaluated in this project:
 
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+
+The models are evaluated using the following metrics:
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+
+## Procedure
+
+- Data preprocessing and normalization
+- Feature selection using Recursive Feature Elimination (RFE)
+- Model training with various classifiers (Logistic Regression, Decision Tree, Random Forest, SVM)
+- Model evaluation using accuracy, precision, recall, and F1 score
+- Cross-validation and hyperparameter tuning for Random Forest
+- Correlation heatmap for feature visualization
+
+## Results
+The selected features using RFE are printed in the console. The performance metrics for each model (Logistic Regression, Decision Tree, Random Forest, SVM) are displayed in a tabular format.
+
+## Cross-Validation and Hyperparameter Tuning
+GridSearchCV is used to perform cross-validation and hyperparameter tuning for the Random Forest model. The best parameters are printed in the console.
+
+## Validation and Testing
+The best model (Random Forest with tuned hyperparameters) is validated on the test set. The accuracy, precision, recall, and F1 score are printed in the console.
+
+## Correlation Heatmap
+A correlation heatmap of the features and the target variable is displayed to visualize the relationships between variables.

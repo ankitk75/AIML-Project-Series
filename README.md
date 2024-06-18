@@ -127,3 +127,93 @@ To install the required dependencies for both projects, you can use the `require
 
 ```bash
 pip install -r requirements.txt
+```
+
+## Project 3: Heart Disease Prediction
+
+Disease Prediction System using Machine Learning
+
+This repository contains the implementation of a Disease Prediction System using machine learning algorithms. The system predicts the likelihood of a person having heart disease based on various health-related features. The project utilizes multiple machine learning models to analyze historical health data and make predictions, contributing to early disease detection and proactive healthcare management.
+
+Table of Contents
+
+Project Description
+Dataset
+Features
+Installation
+Usage
+Results
+Visualization
+Contributing
+License
+Acknowledgements
+Project Description
+
+The "Disease Prediction System using Machine Learning" project aims to develop an intelligent system that predicts the likelihood of heart disease based on various health-related features. The system utilizes machine learning algorithms to analyze historical health data, thereby contributing to early disease detection and proactive healthcare management.
+
+Dataset
+
+The dataset used in this project is the Heart Disease Health Indicators Dataset from Kaggle. It contains various health-related features of individuals, including blood pressure, cholesterol levels, BMI, and smoking status, among others.
+
+Features
+
+The dataset includes the following features:
+
+HighBP
+HighChol
+CholCheck
+BMI
+Smoker
+Stroke
+Diabetes
+PhysActivity
+Fruits
+Veggies
+HvyAlcoholConsump
+AnyHealthcare
+NoDocbcCost
+GenHlth
+MentHlth
+PhysHlth
+DiffWalk
+Sex
+Age
+The target variable is HeartDiseaseorAttack, which indicates whether the individual has heart disease or has experienced a heart attack.
+
+Installation
+
+To run this project, you need to have Python installed along with the necessary libraries. You can install the required libraries using the following command:
+
+bash
+Copy code
+pip install pandas numpy scikit-learn matplotlib seaborn
+Usage
+
+Clone this repository:
+bash
+Copy code
+git clone https://github.com/your-username/disease-prediction-system.git
+Navigate to the project directory:
+bash
+Copy code
+cd disease-prediction-system
+Run the Jupyter Notebook or Python script to train the models and make predictions.
+Results
+
+The system evaluates multiple machine learning models, including Logistic Regression, Decision Tree, Random Forest, and SVM. The performance of each model is measured using accuracy, precision, recall, and F1-score.
+
+Model Performance
+After training and evaluating the models, the results are displayed as follows:
+
+Model	Accuracy	Precision	Recall	F1 Score
+Logistic Regression	0.86	0.70	0.58	0.63
+Decision Tree	0.85	0.65	0.64	0.64
+Random Forest	0.88	0.72	0.60	0.66
+SVM	0.87	0.68	0.59	0.63
+Visualization
+
+The project includes a correlation heatmap to visualize the relationship between the features and the target variable.
+
+
+
+
